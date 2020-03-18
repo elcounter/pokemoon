@@ -22,12 +22,14 @@
     background-size: cover;
   }
   p {
-    margin-top: 5%;
-    text-align: center;
+    margin: 5% 5%;
     color: #2c3e50;
     font-size: 35px;
     font-weight: 300;
     cursor: pointer;
+    text-decoration: none; 
+  }
+  a {
     text-decoration: none; 
   }
 </style>
