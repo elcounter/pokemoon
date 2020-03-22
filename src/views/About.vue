@@ -49,5 +49,7 @@
     font-size: 30px;
     cursor: pointer;
     outline: none;
+    animation: moving 2s ease-in-out infinite;
+    transition: all 1s;
   }
 </style>

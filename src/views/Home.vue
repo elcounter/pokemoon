@@ -46,20 +46,6 @@
     display: block;
     margin: 3% auto;
   }
-  @keyframes floating {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    50% {
-        -webkit-transform: translateY(10px);
-        transform: translateY(10px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-  }
   @media screen and (max-width: 500px) {
     img{
       width: 80%;
