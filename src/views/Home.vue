@@ -4,7 +4,7 @@
     <router-link :to="{path: '/About'}">
       <p v-on:click="song">Press to start</p>
     </router-link>
-    <img src="../assets/dracofeu.gif" alt="Dracaufeu"> 
+    <img src="../assets/dracofeu.gif" alt="Dracaufeu">
   </div>
 </template>
 

@@ -3,6 +3,8 @@
     <router-link :to="{path: '/'}">
       <p>home</p>
     </router-link>
+    <audio id="player" autoplay loop src="../assets/opening.mp3"></audio>
+    <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><i class="fas fa-music"></i></button>
   </div>
 </template>
 
@@ -21,15 +23,26 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  p {
-    margin: 5% 5%;
+  p{
+    margin: 1% 1%;
     color: #2c3e50;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 300;
     cursor: pointer;
     text-decoration: none; 
   }
-  a {
+  a{
     text-decoration: none; 
+  }
+  button{
+    position: absolute;
+    display: block;
+    top: 5%;
+    right: 5%;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
   }
 </style>
