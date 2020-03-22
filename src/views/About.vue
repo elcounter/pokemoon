@@ -4,13 +4,18 @@
       <p>home</p>
     </router-link>
     <audio id="player" autoplay loop src="../assets/opening.mp3"></audio>
-    <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted"><i class="fas fa-music"></i></button>
+    <button v-on:click="mute"><i class="fas fa-music"></i></button>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'About'
+    name: 'About',
+    methods: {
+      mute: function () {
+        document.getElementById('player').muted =! document.getElementById('player').muted
+      }
+    }
   }
 </script>
 
