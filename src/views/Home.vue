@@ -4,7 +4,6 @@
     <router-link :to="{path: '/About'}">
       <p v-on:click="song">Press to start</p>
     </router-link>
-    <img src="../assets/dracofeu.gif" alt="Dracaufeu">
   </div>
 </template>
 
@@ -35,6 +34,9 @@
     font-size: 35px;
     font-weight: 300;
     cursor: pointer;
+    animation: floating 3s ease-in-out infinite;
+    transition: all 1s;
+    text-shadow: 1px 1px 0 snow;
   }
   a {
     text-decoration: none; 
@@ -43,6 +45,20 @@
     width: 40%;
     display: block;
     margin: 3% auto;
+  }
+  @keyframes floating {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
   }
   @media screen and (max-width: 500px) {
     img{
