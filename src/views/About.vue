@@ -1,8 +1,5 @@
 <template>
   <div id="about">
-    <router-link :to="{path: '/'}">
-      <p>home</p>
-    </router-link>
     <audio id="backgroundMusic" loop src="../assets/opening.mp3"></audio>
     <button class="play" v-on:click="play"><i class="fas fa-play"></i></button>
     <button class="pause" v-on:click="pause"><i class="fas fa-pause"></i></button>

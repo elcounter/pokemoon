@@ -1,6 +1,8 @@
 <template>
   <div id="modal">
     <i class="fas fa-times"></i>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima ipsam corporis tenetur iure quam dolore, illo nihil harum, maiores, eius enim impedit nam. Nulla, blanditiis. Iusto cupiditate consectetur neque nostrum!</p>
+    <span>© elcounter 2020</span>
   </div>
 </template>
 
@@ -17,6 +19,7 @@
     height: 80%;
     display: flex;
     margin: auto;
+    margin-top: 3%;
     background-color: rgba(1, 1, 1, 0.8);
     box-shadow: 0px 5px 15px 0px black;
     border-radius: 15px;
@@ -28,6 +31,20 @@
     color: snow;
     font-size: 30px;
     cursor: pointer;
+  }
+  p{
+    color: snow;
+    text-align: justify;
+    line-height: 30px;
+    width: 80%;
+    margin: auto
+  }
+  span{
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    font-size: 10px;
+    color: grey;
   }
   @media screen and (max-width: 500px) {
     #modal{
