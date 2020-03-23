@@ -37,7 +37,8 @@
     text-align: justify;
     line-height: 30px;
     width: 80%;
-    margin: auto
+    margin: auto;
+    font-style: italic;
   }
   span{
     position: absolute;
@@ -52,5 +53,15 @@
       height: 70%;
       margin-top: 30%;
     }
+  }
+  @media screen and (max-width: 1024px) and (min-width: 501px) {
+    #modal{
+      width: 80%; 
+      height: 70%;
+      margin-top: 20%;
+    }
+    p{
+      line-height: 50px;
+   }
   }
 </style>

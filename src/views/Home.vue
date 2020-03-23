@@ -43,7 +43,7 @@
     text-decoration: none; 
   }
   img{
-    width: 40%;
+    width: 45%;
     display: block;
     margin: 3% auto;
   }
@@ -54,6 +54,12 @@
     }
     p {
     padding-top: 0px;
+    }
+  }
+  @media screen and (max-width: 1024px) and (min-width: 501px){
+    img{
+      width: 70%;
+      margin: 15% auto;
     }
   }
 </style>

@@ -77,4 +77,10 @@
       right: 15%;
     }
   }
+  @media screen and (max-width: 1024px) and (min-width: 501px){
+    button.play{
+      top: 5%;
+      right: 10%;
+    }
+  }
 </style>
