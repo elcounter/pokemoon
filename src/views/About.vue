@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <audio id="backgroundMusic" loop src="../assets/opening.ogg"></audio>
+    <audio id="backgroundMusic" loop src="../assets/main.mp3"></audio>
     <button class="play" v-on:click="play"><i class="fas fa-play"></i></button>
     <button class="pause" v-on:click="pause"><i class="fas fa-pause"></i></button>
     <Modal />
