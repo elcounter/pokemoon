@@ -3,7 +3,8 @@
     <audio id="backgroundMusic" loop src="../assets/main.mp3"></audio>
     <button class="play" v-on:click="play"><i class="fas fa-play"></i></button>
     <button class="pause" v-on:click="pause"><i class="fas fa-pause"></i></button>
-    <Modal />
+    <button class="modalButton" @click="showModal = true">OPEN</button>
+    <Modal v-if="showModal" />
   </div>
 </template>
 
@@ -14,17 +15,21 @@
     components: {
       Modal
     },
+    data() {
+      return {
+        showModal: false
+      };
+    },
     methods: {
       play: function () {
         var opening = document.getElementById('backgroundMusic')
-        opening.volume = 0.5
         opening.play()
       },
       pause: function () {
         var opening = document.getElementById('backgroundMusic')
         opening.pause()
       },
-    }
+    },
   }
 </script>
 
@@ -56,16 +61,18 @@
     font-size: 30px;
     cursor: pointer;
     outline: none;
-    animation: moving 1s ease-in-out;
-    transition: all 1s;
   }
   button.pause{
     top: 5%;
     right: 5%;
+    animation: moving 1s ease-in-out;
+    transition: all 1s;
   }
   button.play{
     top: 5%;
     right: 8%;
+    animation: moving 1s ease-in-out;
+    transition: all 1s;
   }
   @media screen and (max-width: 500px) {
     button.pause{

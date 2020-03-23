@@ -1,6 +1,6 @@
 <template>
   <div id="modal">
-    <i class="fas fa-times"></i>
+    <i class="fas fa-times" @click="showModal = false"></i>
     <h2>Welcome</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima ipsam corporis tenetur iure quam dolore, illo nihil harum, maiores, eius enim impedit nam. Nulla, blanditiis. Iusto cupiditate consectetur neque nostrum!</p>
     <span>© elcounter 2020</span>
