@@ -3,18 +3,24 @@
     <router-link :to="{path: '/'}">
       <p>home</p>
     </router-link>
-    <audio id="backgroundMusic" autoplay loop src="../assets/opening.mp3"></audio>
+    <audio id="backgroundMusic" loop src="../assets/opening.mp3"></audio>
     <button class="play" v-on:click="play"><i class="fas fa-play"></i></button>
     <button class="pause" v-on:click="pause"><i class="fas fa-pause"></i></button>
+    <Modal />
   </div>
 </template>
 
 <script>
+  import Modal from '../components/Modal.vue'
   export default {
     name: 'About',
+    components: {
+      Modal
+    },
     methods: {
       play: function () {
         var opening = document.getElementById('backgroundMusic')
+        opening.volume = 0.5
         opening.play()
       },
       pause: function () {
@@ -53,7 +59,7 @@
     font-size: 30px;
     cursor: pointer;
     outline: none;
-    animation: moving 2s ease-in-out infinite;
+    animation: moving 1s ease-in-out;
     transition: all 1s;
   }
   button.pause{
@@ -62,7 +68,7 @@
   }
   button.play{
     top: 5%;
-    right: 10%;
+    right: 8%;
   }
   @media screen and (max-width: 500px) {
     button.pause{

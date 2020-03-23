@@ -15,12 +15,8 @@
 
 @keyframes moving {
     0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    50% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
     }
     100% {
         -webkit-transform: translateX(0);
