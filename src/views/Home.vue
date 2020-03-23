@@ -29,6 +29,7 @@
     background-size: cover;
   }
   p {
+    padding-top: 50px;
     text-align: center;
     color: #2c3e50;
     font-size: 35px;
@@ -50,6 +51,9 @@
     img{
       width: 80%;
       margin: 30% auto;
+    }
+    p {
+    padding-top: 0px;
     }
   }
 </style>

@@ -3,8 +3,9 @@
     <router-link :to="{path: '/'}">
       <p>home</p>
     </router-link>
-    <audio id="player" autoplay loop src="../assets/opening.mp3"></audio>
-    <button v-on:click="mute"><i class="fas fa-music"></i></button>
+    <audio id="backgroundMusic" autoplay loop src="../assets/opening.mp3"></audio>
+    <button class="play" v-on:click="play"><i class="fas fa-play"></i></button>
+    <button class="pause" v-on:click="pause"><i class="fas fa-pause"></i></button>
   </div>
 </template>
 
@@ -12,9 +13,14 @@
   export default {
     name: 'About',
     methods: {
-      mute: function () {
-        document.getElementById('player').muted =! document.getElementById('player').muted
-      }
+      play: function () {
+        var opening = document.getElementById('backgroundMusic')
+        opening.play()
+      },
+      pause: function () {
+        var opening = document.getElementById('backgroundMusic')
+        opening.pause()
+      },
     }
   }
 </script>
@@ -42,8 +48,6 @@
   button{
     position: absolute;
     display: block;
-    top: 5%;
-    right: 5%;
     background: none;
     border: none;
     font-size: 30px;
@@ -51,5 +55,23 @@
     outline: none;
     animation: moving 2s ease-in-out infinite;
     transition: all 1s;
+  }
+  button.pause{
+    top: 5%;
+    right: 5%;
+  }
+  button.play{
+    top: 5%;
+    right: 10%;
+  }
+  @media screen and (max-width: 500px) {
+    button.pause{
+      top: 5%;
+      right: 5%;
+    }
+    button.play{
+      top: 5%;
+      right: 15%;
+    }
   }
 </style>
